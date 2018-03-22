@@ -1,0 +1,97 @@
+//$header-color: #212121;
+$header-color: green;
+$green: #4aa48a;
+$font-family-base: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input {
+  outline: 0;
+}
+
+ul, li {
+  list-style: none;
+  color: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
+
+
+header.navbar {
+  padding: 0;
+  position: fixed;
+  z-index: 999;
+
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  box-shadow: 0 2px 3px rgba(black, 0.1);
+  color: $header-color;
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  .container {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar-collapse {
+      justify-content: space-around;
+    }
+
+
+    .navbar {
+      display: flex;
+      align-items: center;
+
+      & >li {
+        margin-right: 5px;
+      }
+    }
+
+
+  }
+}
+
+.notification {
+  padding: 0 !important;
+  &>span {
+    top: 4px !important;
+    right: 2px !important;
+    width: 20px !important;
+    height: 20px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5) !important;
+  }
+}

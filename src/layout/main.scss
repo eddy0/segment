@@ -1,0 +1,91 @@
+@import "layout.scss";
+
+$light-bgc: #e8e8e8;
+
+.main{
+  width: 1000px;
+  margin: 70px auto 0;
+  display: flex;
+
+  .container {
+    width: 70%;
+
+    .storyCard {
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(black, 0.2);
+      background-color: #fff !important;
+    }
+  }
+
+  .side {
+    width: 30%;
+
+    .tag {
+      background-color: #fff;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(black, 0.2);
+
+      .tag-header {
+        background-color: #fff;
+        padding:10px 15px;
+        border-bottom: 1px solid #dddddd;
+        display: flex;
+        justify-content: space-between;
+
+        }
+
+      .tag-list {
+        background-color: #fff;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .tag-item {
+
+          .tag-chip {
+            background-color: $green !important;
+            box-shadow: 1px 3px 5px rgba(black, 0.2);
+
+            &:hover {
+              background-color: #27464d !important;
+              opacity: 0.8;
+            }
+
+            span {
+              color: #fff !important;
+            }
+          }
+        }
+
+      }
+    }
+
+    .tag .rank-list {
+      padding: 10px 15px;
+      color: $green;
+      list-style: initial;
+
+
+      .hero {
+        display: flex;
+        margin-bottom: 10px;
+
+        .hero:first-child {
+           margin-right: 10px;
+         }
+
+        .user-info {
+          flex: 1;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
