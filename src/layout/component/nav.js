@@ -1,4 +1,6 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+
 
 class Nav extends React.Component {
     render() {
@@ -6,7 +8,7 @@ class Nav extends React.Component {
             <div className="collapse  navbar-collapse">
                 <ul className='navbar' >
                     <li className="nav-item active">
-                        <a className="nav-link " href="#">BLOG <span className="sr-only">(current)</span></a>
+                        <Link className="nav-link " to="/login">BLOG <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">ASK</a>

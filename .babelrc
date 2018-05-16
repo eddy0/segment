@@ -2,9 +2,12 @@
      "presets":
      [
          "env",
-         "react"
+         "react",
+        "es2015",
+       "stage-2"
      ],
 
-  "plugins": ["transform-class-properties", "react-html-attrs"]
+  "plugins":
+ ["transform-class-properties", "react-html-attrs"]
 
  }

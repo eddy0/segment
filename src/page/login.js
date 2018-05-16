@@ -14,7 +14,7 @@ class Login extends React.Component {
     render() {
         return (
             <div>
-                <form action="#" id="login-form">
+                <form action="" method='post' id="login-form">
                     <div className="heading">Login</div>
                     <div className="left">
                         <input type="email" name="email" id="email" placeholder='Email'/>

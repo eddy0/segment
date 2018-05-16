@@ -1,4 +1,5 @@
-module.exports = {
+ const config = {
+    target:'node',
     module: {
         rules: [
             {
@@ -28,3 +29,5 @@ module.exports = {
         ]
     }
 }
+
+module.exports = config

@@ -43,7 +43,8 @@ class Model extends mongoose.Model {
     }
 }
 
-Module.exports = {
+
+module.exports = {
     mongoose: mongoose,
     Model: Model,
 }
